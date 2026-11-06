@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: sudo.log # the main title
 
-tagline: 개발하며 배운 것들을 기록합니다 # it will display as the subtitle
+tagline: HYU CSE # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   MinJae의 개발 공부 기록 블로그
@@ -33,7 +33,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: MinJae
-  email: # 공개해도 되는 이메일이 있으면 입력 # change to your email address
+  email: chminja7345@hanyang.ac.kr
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
