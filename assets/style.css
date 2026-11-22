@@ -17,7 +17,7 @@ body {
 }
 main { max-width: 600px; margin: 0 auto; padding: 64px 16px 96px; }
 
-/* 링크: 검정 글씨 + 옅은 밑줄, hover 때 밑줄만 진해짐 */
+/* Links: body-colored text, light underline that darkens on hover */
 a {
   color: var(--fg);
   text-decoration: underline;
@@ -30,7 +30,7 @@ a:hover { text-decoration-color: var(--fg); }
 h1.home { font-size: 1.5rem; line-height: 1; margin: 0 0 56px; }
 h1.home a { text-decoration: none; }
 
-/* 섹션: 왼쪽 라벨 + 오른쪽 내용 */
+/* Sections: label on the left, content on the right */
 section {
   display: grid;
   grid-template-columns: 72px 1fr;
@@ -48,7 +48,7 @@ li { margin: 0 0 2px; }
 .cat a { margin-right: 0; }
 .count { color: var(--muted); font-size: .75rem; margin-left: 3px; vertical-align: super; }
 
-/* 글 */
+/* Post */
 .meta { margin: 0; font-size: .85rem; color: var(--muted); }
 .meta a { color: var(--muted); margin-right: 8px; }
 h1.title { font-size: 1.4rem; line-height: 1.4; margin: 4px 0 40px; }

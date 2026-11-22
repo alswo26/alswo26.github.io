@@ -1,8 +1,8 @@
 ---
 title: "Linux Memory Layout"
 date: 2026-11-06 20:00:00 +0900
-categories: [보안,시스템]
-tags: [어셈블리어]
+categories: [Security, System]
+tags: [assembly]
 # math: true        # 수식 쓸 때 주석(#) 지우기
 # pin: true         # 홈 상단에 고정할 때
 # image:            # 대표 이미지 (목록·공유 미리보기)

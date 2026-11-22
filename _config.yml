@@ -1,7 +1,7 @@
 title: alswo26.github.io
 url: "https://alswo26.github.io"
 baseurl: ""
-lang: ko
+lang: en
 timezone: Asia/Seoul
 
 github: https://github.com/alswo26
@@ -15,6 +15,7 @@ defaults:
       type: posts
     values:
       layout: post
+      lang: ko
 
 plugins:
   - jekyll-feed

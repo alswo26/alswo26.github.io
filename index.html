@@ -6,15 +6,15 @@ layout: default
 {% assign tags = site.tags | sort %}
 
 <section>
-  <h2>최신</h2>
+  <h2>Recent</h2>
   <div>
     {% include post-list.html posts=recent %}
-    <a class="more" href="{{ '/posts/' | relative_url }}">전체 글 →</a>
+    <a class="more" href="{{ '/posts/' | relative_url }}">All posts →</a>
   </div>
 </section>
 
 <section>
-  <h2>카테고리</h2>
+  <h2>Categories</h2>
   <p class="inline">
     {%- for c in cats %}
     {%- assign n = 0 %}
@@ -25,7 +25,7 @@ layout: default
 </section>
 
 <section>
-  <h2>태그</h2>
+  <h2>Tags</h2>
   <p class="inline">
     {%- for t in tags %}
     <a href="{{ '/tags/' | relative_url }}#{{ t[0] | slugify }}">#{{ t[0] }}</a>
@@ -34,6 +34,6 @@ layout: default
 </section>
 
 <section>
-  <h2>소개</h2>
+  <h2>About</h2>
   <p class="inline"><a href="{{ '/about/' | relative_url }}">about</a></p>
 </section>
