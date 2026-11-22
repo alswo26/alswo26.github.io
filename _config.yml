@@ -1,0 +1,29 @@
+title: alswo26.github.io
+url: "https://alswo26.github.io"
+baseurl: ""
+lang: ko
+timezone: Asia/Seoul
+
+github: https://github.com/alswo26
+recent_posts: 3
+
+permalink: /posts/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+plugins:
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor

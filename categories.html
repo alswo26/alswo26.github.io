@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: /categories/
+---
+{% include cats.html %}
+{% for c in cats %}
+{%- assign list = "" | split: "" %}
+{%- for p in site.posts %}{% assign pc = p.categories | first %}{% if pc == c %}{% assign list = list | push: p %}{% endif %}{% endfor %}
+<section id="{{ c | slugify }}">
+  <h2>{{ c }}</h2>
+  <div>{% include post-list.html posts=list %}</div>
+</section>
+{% endfor %}

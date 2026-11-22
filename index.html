@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% include cats.html %}
+{% assign recent = site.posts | slice: 0, site.recent_posts %}
+{% assign tags = site.tags | sort %}
+
+<section>
+  <h2>최신</h2>
+  <div>
+    {% include post-list.html posts=recent %}
+    <a class="more" href="{{ '/posts/' | relative_url }}">전체 글 →</a>
+  </div>
+</section>
+
+<section>
+  <h2>카테고리</h2>
+  <p class="inline">
+    {%- for c in cats %}
+    {%- assign n = 0 %}
+    {%- for p in site.posts %}{% assign pc = p.categories | first %}{% if pc == c %}{% assign n = n | plus: 1 %}{% endif %}{% endfor %}
+    <span class="cat"><a href="{{ '/categories/' | relative_url }}#{{ c | slugify }}">{{ c }}</a><span class="count">{{ n }}</span></span>
+    {%- endfor %}
+  </p>
+</section>
+
+<section>
+  <h2>태그</h2>
+  <p class="inline">
+    {%- for t in tags %}
+    <a href="{{ '/tags/' | relative_url }}#{{ t[0] | slugify }}">#{{ t[0] }}</a>
+    {%- endfor %}
+  </p>
+</section>

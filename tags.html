@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /tags/
+---
+{% assign tags = site.tags | sort %}
+{% for t in tags %}
+<section id="{{ t[0] | slugify }}">
+  <h2>#{{ t[0] }}</h2>
+  {%- assign list = t[1] %}
+  <div>{% include post-list.html posts=list %}</div>
+</section>
+{% endfor %}

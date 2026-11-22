@@ -1,0 +1,15 @@
+# Bundler
+.bundle
+vendor
+Gemfile.lock
+
+# Jekyll
+.jekyll-cache
+.jekyll-metadata
+_site
+
+# OS
+.DS_Store
+
+# Claude Code
+.claude

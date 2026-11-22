@@ -1,0 +1,7 @@
+{%- comment -%} 각 글의 첫 번째 카테고리만 모아 `cats` 배열을 만든다 {%- endcomment -%}
+{%- assign cats = "" | split: "" -%}
+{%- for p in site.posts -%}
+  {%- assign c = p.categories | first -%}
+  {%- if c -%}{%- assign cats = cats | push: c -%}{%- endif -%}
+{%- endfor -%}
+{%- assign cats = cats | uniq -%}

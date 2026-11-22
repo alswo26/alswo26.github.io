@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article>
+  <p class="meta">
+    <span class="date">{{ page.date | date: "%Y.%m.%d" }}</span>
+    {%- assign c = page.categories | first %}
+    {%- if c %}<a href="{{ '/categories/' | relative_url }}#{{ c | slugify }}">{{ c }}</a>{% endif %}
+    {%- for t in page.tags %} <a href="{{ '/tags/' | relative_url }}#{{ t | slugify }}">#{{ t }}</a>{% endfor %}
+  </p>
+  <h1 class="title">{{ page.title }}</h1>
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
