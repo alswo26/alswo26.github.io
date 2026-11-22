@@ -5,6 +5,7 @@ lang: ko
 timezone: Asia/Seoul
 
 github: https://github.com/alswo26
+email: chminja7345@hanyang.ac.kr
 recent_posts: 3
 
 permalink: /posts/:title/
